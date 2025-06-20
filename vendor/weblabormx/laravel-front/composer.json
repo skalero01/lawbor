@@ -1,0 +1,47 @@
+{
+    "name": "weblabormx/laravel-front",
+    "description": "Front is a administration panel for Laravel. It allows you to create CRUD easily in minutes. It allows to fully customize any part of the code.",
+    "keywords": [
+        "laravel",
+        "admin"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Escobar",
+            "email": "carlosescobar@weblabor.mx"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "intervention/image": "^2.5 || ^3.0",
+        "laracasts/flash": ">=3",
+        "laravel/framework": ">5.5",
+        "opis/closure": "^3.1",
+        "weblabormx/laravel-html": "^1",
+        "weblabormx/file-modifier": "*"
+    },
+    "autoload": {
+        "files": [
+            "src/Http/helpers.php"
+        ],
+        "psr-4": {
+            "WeblaborMx\\Front\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.3-dev"
+        },
+        "laravel": {
+            "providers": [
+                "WeblaborMx\\Front\\FrontServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

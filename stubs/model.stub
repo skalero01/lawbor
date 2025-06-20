@@ -1,0 +1,24 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Model;
+use Nicolaslopezj\Searchable\SearchableTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use WeblaborMx\TallUtils\Models\WithActivityLog;
+
+class {{ class }} extends Model
+{
+	use SearchableTrait, SoftDeletes, WithActivityLog;
+	
+    protected $guarded = [];
+    protected $searchable = [
+        'columns' => [
+            'name' => 10,
+        ],
+    ];
+
+    /*
+     * Relationships
+     */
+}

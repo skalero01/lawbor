@@ -1,0 +1,35 @@
+<?php
+
+namespace {{ namespace }};
+
+enum {{ class }}: int
+{
+    use IsEnum;
+
+    case Creating = 0;
+    case Draft    = 1;
+    case Sent     = 2;
+
+    public function label(): string
+    {
+        return match ($this) {
+            self::Creating => __('Creating'),
+            self::Draft    => __('Draft'),
+            self::Sent     => __('Sent'),
+        };
+    }
+
+    public function color(): string
+    {
+        return match ($this) {
+            self::Creating => 'bg-blue-200',
+            self::Draft    => 'bg-gray-200',
+            self::Sent     => 'bg-green-200',
+        };
+    }
+
+    public function badge(): string
+    {
+        return '<span class="p-2 ' . $this->color() . ' rounded-lg">' . $this->label() . '</span>';
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "resources/assets/js/custom-switcher.js": {
+    "file": "assets/custom-switcher-CoAn7VA4.js",
+    "name": "custom-switcher",
+    "src": "resources/assets/js/custom-switcher.js",
+    "isEntry": true,
+    "imports": [
+      "resources/assets/js/defaultmenu.js"
+    ]
+  },
+  "resources/assets/js/defaultmenu.js": {
+    "file": "assets/defaultmenu-CaTxnMNo.js",
+    "name": "defaultmenu",
+    "src": "resources/assets/js/defaultmenu.js",
+    "isEntry": true
+  },
+  "resources/assets/js/simplebar.js": {
+    "file": "assets/simplebar-B35Aj-bA.js",
+    "name": "simplebar",
+    "src": "resources/assets/js/simplebar.js",
+    "isEntry": true
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-k3cB-vRP.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-LcgArjYU.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-C3pKBFsl.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  }
+}

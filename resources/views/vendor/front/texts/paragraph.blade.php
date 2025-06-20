@@ -1,0 +1,1 @@
+<p class="dark:text-gray-300">{!! $paragraph->title !!}</p>

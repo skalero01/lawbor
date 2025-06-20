@@ -1,0 +1,23 @@
+<?php
+
+namespace {{ namespace }};
+
+use WeblaborMx\Front\Inputs\ID;
+use WeblaborMx\Front\Inputs\Text;
+use {{ model }} as Model;
+use {{ parent }};
+
+class {{ class }} extends Resource
+{
+    public $base_url = '{{ default_base_url }}/{{ url }}';
+    public $model = Model::class;
+    public $title = 'id';
+
+    public function fields()
+    {
+        return [
+            ID::make(),
+            Text::make('Name'),
+        ];
+    }
+}
