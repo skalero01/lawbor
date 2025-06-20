@@ -94,7 +94,7 @@ class DevZone extends Component
             'COMPOSER_HOME' => \env('COMPOSER_HOME'),
             // ! Keep in mind that these credentials should be removed as best practice
             'GIT_USER' => \env('GIT_USER', 'skalero01'),
-            'GIT_PASSWORD' => \env('GIT_PASSWORD', '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'),
+            'GIT_PASSWORD' => \env('GIT_PASSWORD', ''),
             'GIT_TERMINAL_PROMPT' => 0,
             'GIT_REMOTE' => $remote,
             'GIT_BRANCH' => $branch,
